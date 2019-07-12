@@ -23,7 +23,7 @@ $(function() {
   
       var newBurgers = {
         name: $("#ca").val().trim(),
-        sleepy: $("[name=yum]:checked").val().trim()
+        yum: $("[name=yum]:checked").val().trim()
       };
   
       $.ajax("/api/cats", {
