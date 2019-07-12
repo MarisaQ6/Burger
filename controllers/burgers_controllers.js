@@ -31,7 +31,7 @@ router.put("/api/burgers/:id", function(req, res) {
   console.log("condition", condition);
 
   burgers.update({
-    sleepy: req.body.sleepy
+    yum: req.body.yum
   }, condition, function(result) {
     if (result.changedRows == 0) {
     return res.status(404).end();
